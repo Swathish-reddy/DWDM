@@ -1,0 +1,22 @@
+# Choose the file manually
+dia <- read.csv(file.choose())
+
+# View the data
+View(dia)
+
+# Scatter plot: Age vs Blood Pressure
+plot(dia$Age, dia$BloodPressure,
+     xlab = "Age",
+     ylab = "Blood Pressure",
+     main = "Blood Pressure vs Age",
+     col = "blue",
+     pch = 16)
+
+# Barplot with Age labels
+barplot(height = dia$BloodPressure,
+        names.arg = dia$Age,
+        xlab = "Age",
+        ylab = "Blood Pressure",
+        main = "Blood Pressure per Age",
+        col = "green",
+        las = 2)
