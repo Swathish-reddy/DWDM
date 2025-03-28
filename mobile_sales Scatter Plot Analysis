@@ -1,0 +1,16 @@
+@relation mobile_sales
+
+@attribute Mobile_Phones_Sold numeric
+@attribute Money_Earned numeric
+
+@data
+4,12
+1,5
+5,13
+7,19
+10,31
+2,7
+50,153
+25,72
+90,275
+36,110
