@@ -1,0 +1,16 @@
+@relation vegetarian_classification
+
+@attribute Person string
+@attribute Vegetarian {yes,no}
+
+@data
+Gopu,yes
+Babu,yes
+Baby,yes
+Gopal,no
+Krishna,yes
+Jai,no
+Dev,no
+Malini,yes
+Hema,yes
+Anu,yes
