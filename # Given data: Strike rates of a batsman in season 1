@@ -1,0 +1,33 @@
+# Given data: Strike rates of a batsman in season 1
+strike_rates <- c(100, 70, 60, 90, 90)
+
+# (a) Min-Max Normalization (min = 0, max = 1)
+min_val <- min(strike_rates)
+max_val <- max(strike_rates)
+min_max_normalized <- (strike_rates - min_val) / (max_val - min_val)
+
+# (b) Z-score Normalization
+mean_val <- mean(strike_rates)
+std_dev <- sd(strike_rates)
+z_score_normalized <- (strike_rates - mean_val) / std_dev
+
+# (c) Z-score Normalization using Mean Absolute Deviation (MAD)
+mad_val <- mean(abs(strike_rates - mean_val))
+z_score_mad_normalized <- (strike_rates - mean_val) / mad_val
+
+# (d) Decimal Scaling Normalization
+max_digits <- ceiling(log10(max(abs(strike_rates))))
+decimal_scaling_normalized <- strike_rates / (10^max_digits)
+
+# Print results
+print("Min-Max Normalization:")
+print(min_max_normalized)
+
+print("Z-score Normalization:")
+print(z_score_normalized)
+
+print("Z-score Normalization using MAD:")
+print(z_score_mad_normalized)
+
+print("Decimal Scaling Normalization:")
+print(decimal_scaling_normalized)
