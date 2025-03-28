@@ -1,0 +1,22 @@
+# Input data
+frequencies <- c(200, 450, 300, 1500, 700, 44)
+boundaries <- c(1, 5, 15, 20, 50, 80) 
+widths <- c(4, 10, 5, 30, 30, 30)    
+
+# Compute cumulative frequencies
+cum_freq <- cumsum(frequencies)
+total_freq <- sum(frequencies)
+
+# Find median class
+median_index <- which(cum_freq >= total_freq / 2)[1]
+
+# Parameters for the median formula
+L <- boundaries[median_index]        
+CF <- ifelse(median_index > 1, cum_freq[median_index - 1], 0) 
+f <- frequencies[median_index]        
+h <- widths[median_index]             
+# Compute median
+median <- L + (((total_freq / 2) - CF) / f) * h
+
+# Output
+cat("Approximate Median:", median, "\n")
