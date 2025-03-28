@@ -1,0 +1,21 @@
+@relation transactions
+
+@attribute TID {T1, T2, T3, T4, T5}
+@attribute M {true, false}
+@attribute O {true, false}
+@attribute N {true, false}
+@attribute K {true, false}
+@attribute E {true, false}
+@attribute Y {true, false}
+@attribute D {true, false}
+@attribute A {true, false}
+@attribute U {true, false}
+@attribute C {true, false}
+@attribute I {true, false}
+
+@data
+T1,true,true,true,true,true,true,false,false,false,false,false
+T2,false,true,true,true,true,true,true,false,false,false,false
+T3,true,false,false,true,true,false,false,true,false,false,false
+T4,true,false,false,true,false,true,false,false,true,true,false
+T5,false,true,false,true,true,false,false,false,false,true,true
