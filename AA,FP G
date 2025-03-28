@@ -1,6 +1,0 @@
-.Consider the data set and perform the Apriori Algorithm and FP algorithm support:3 and confidence=50%
-Consider the market basket transactions shown in the above table.
-(a) What is the maximum number of association rules that can be extracted
-from this data (including rules that have zero support)?
-(b) What is the maximum size of frequent itemsets that can be extracted
-(assuming minsup > 0)?
