@@ -1,0 +1,20 @@
+@relation transactions
+
+@attribute Milk {0,1}
+@attribute Beer {0,1}
+@attribute Diapers {0,1}
+@attribute Bread {0,1}
+@attribute Butter {0,1}
+@attribute Cookies {0,1}
+
+@data
+1,1,1,0,0,0
+0,0,0,1,1,1
+1,0,1,0,0,1
+0,0,0,1,1,1
+0,1,1,0,0,1
+1,0,1,1,1,0
+0,0,0,1,1,1
+0,1,1,0,0,0
+1,0,1,1,1,0
+0,1,0,0,0,1
